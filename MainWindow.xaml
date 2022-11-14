@@ -7,6 +7,10 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-
+        <Button Content="Сгенерировать число" HorizontalAlignment="Left" Margin="200,136,0,0" VerticalAlignment="Top" Height="41" Width="162"/>
+        <Button Content="Попробовать еще раз" HorizontalAlignment="Left" Margin="10,0,0,0" VerticalAlignment="Center" Height="41" Width="162"/>
+        <TextBox x:Name="rofl" HorizontalAlignment="Left" Margin="10,133,0,0" TextWrapping="Wrap" Text=" " VerticalAlignment="Top" Width="171" Height="44"/>
+        <Label Content="Угадай число от 1 до 100" Margin="10,75,438,306" FontSize="24"/>
+        <TextBlock x:Name="lab" Text="." Margin="511,480,222,-70"/>
     </Grid>
 </Window>
