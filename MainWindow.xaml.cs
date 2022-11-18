@@ -39,15 +39,15 @@ namespace Wpf_Chemeris_PR4._1
 
             if (i == test)
             {
-                MessageBox.Show("Угадал, bruh");
+                MessageBox.Show("Правильно");
             }
             else if (i > test)
             {
-                MessageBox.Show("Маленькое число");
+                MessageBox.Show("Small число");
             }
             else
             {
-                MessageBox.Show("Большое число");
+                MessageBox.Show("Big число");
             }
         }
     }
