@@ -5,12 +5,22 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Wpf_Chemeris_PR4._1"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="450" Width="426">
     <Grid>
-        <Button Content="Сгенерировать число" HorizontalAlignment="Left" Margin="200,136,0,0" VerticalAlignment="Top" Height="41" Width="162"/>
-        <Button Content="Попробовать еще раз" HorizontalAlignment="Left" Margin="10,0,0,0" VerticalAlignment="Center" Height="41" Width="162"/>
-        <TextBox x:Name="rofl" HorizontalAlignment="Left" Margin="10,133,0,0" TextWrapping="Wrap" Text=" " VerticalAlignment="Top" Width="171" Height="44"/>
-        <Label Content="Угадай число от 1 до 100" Margin="10,75,438,306" FontSize="24"/>
+        <Label Content="        Угадай число" Margin="16,92,0,0" FontSize="36" Height="60" VerticalAlignment="Top" HorizontalAlignment="Left" Width="384"/>
+        <Label Content="Угадай число от 1 до 100" Margin="110,156,0,0" FontSize="16" Height="38" VerticalAlignment="Top" HorizontalAlignment="Left" Width="196"/>
+        <TextBox x:Name="Chislo" Margin="107,210,0,0" Height="44" VerticalAlignment="Top" HorizontalAlignment="Left" Width="202"/>
+        <Button x:Name="Ugaday" Content="Нажимать после генерации числа" Margin="86,289,0,0" FontSize="14" RenderTransformOrigin="0.5,0.5" Click="Ugaday_Click" Height="32" VerticalAlignment="Top" HorizontalAlignment="Left" Width="244">
+            <Button.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-0.053"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Button.RenderTransform>
+        </Button>
+        <Button x:Name="Sgen" Content="Сгенерировать число" HorizontalAlignment="Left" Margin="147,258,0,0" VerticalAlignment="Top" Click="Sgen_Click"/>
         <TextBlock x:Name="lab" Text="." Margin="511,480,222,-70"/>
     </Grid>
 </Window>
